@@ -13,7 +13,7 @@ public class Day2FixNSwitchStatement {
 
 
     public static void switch_it() {
-        switch( year ) {
+        switch (year) {
 
             case 1:
                 System.out.println("English, Math, Drawing");
@@ -48,7 +48,7 @@ public class Day2FixNSwitchStatement {
                         break;
                     default:
                         year = 0;
-                    break;
+                        break;
 
                 }
         }

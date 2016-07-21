@@ -4,7 +4,7 @@ package Week2.day1;
  * Created by Justin on 7/18/16.
  */
 
-    public class Day1TimesTable {
+public class Day1TimesTable {
 
     public static void main(String[] args) {
         int tableSize = 200;

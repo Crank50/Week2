@@ -53,8 +53,7 @@ public class day1Fizzbuzz {
 }
 
 
-
-        // if we have a word, print it, else print the number
+// if we have a word, print it, else print the number
 
 
 

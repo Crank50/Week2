@@ -1,4 +1,5 @@
 package Week2.day1;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -11,15 +12,15 @@ public class Day1Palindrom {
         InputStreamReader inputStreamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         System.out.println("Enter a word to test. Use 'exit' to stop application");
-        while(true) {
+        while (true) {
             try {
                 String inputString = bufferedReader.readLine();
                 //break kills the control flow
-                if(inputString.equalsIgnoreCase("exit")) {
+                if (inputString.equalsIgnoreCase("exit")) {
                     break;
                 }
 
-              //  System.out.println(isPalindromeArrayLoop(inputString));
+                //  System.out.println(isPalindromeArrayLoop(inputString));
 
                 System.out.println(isPalindromeStringBuilder(inputString));
 
@@ -30,8 +31,6 @@ public class Day1Palindrom {
                 } else {
                     System.out.println("false");
                 }*/
-
-
 
 
             } catch (Exception e) {
@@ -45,12 +44,12 @@ public class Day1Palindrom {
         //reverse inputString using an array loop and see if there is a match
         char[] inputStringCopy = inputString.toCharArray();
         int i = 0;
-        for( int j = inputStringCopy.length-1; j >= 0; j--) {
+        for (int j = inputStringCopy.length - 1; j >= 0; j--) {
             inputStringCopy[i] = inputString.charAt(j);
             i++;
         }
         if (inputString.equalsIgnoreCase(new String(inputStringCopy))) {
-                isPalindrome = true;
+            isPalindrome = true;
         }
         return isPalindrome;
     }
@@ -63,7 +62,7 @@ public class Day1Palindrom {
         inputStringCopy.append(inputString);
         inputStringCopy = inputStringCopy.reverse();
 
-        if(inputString.equalsIgnoreCase(inputStringCopy.toString()))  {
+        if (inputString.equalsIgnoreCase(inputStringCopy.toString())) {
             isPalindrome = true;
         }
 
