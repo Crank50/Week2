@@ -79,9 +79,9 @@ public class Day3RockPaperScissors {
 
 // ask player 1 for their choice of rock paper scissors
 
-//todo the game should randomely select the computers selection
+//the game should randomely select the computers selection
 
-//todo the game then outputs who won in this format: "Player: rock vs Computer : scissors ----- Player wins
+// the game then outputs who won in this format: "Player: rock vs Computer : scissors ----- Player wins
 
 // rock beats scissors
 
